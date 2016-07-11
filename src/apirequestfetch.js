@@ -6,6 +6,7 @@ function apirequestfetch(userIP) {
     return fetch(url)
     .then(function(response) {
       return response.json();
+      console.log(response.json);
     }).then(function(returnedJson) {
       console.log(returnedJson);
     }).catch(function(error) {
