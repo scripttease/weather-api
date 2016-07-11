@@ -2,7 +2,10 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: [
+   "whatwg-fetch",
+   "./src/main.js",
+ ],
   output: {
     path: "./dist",
     filename: "main.js",
@@ -15,6 +18,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      },
+      {
+        test: /\.json$/,
+        loader: 'json',
       },
     ],
   },
