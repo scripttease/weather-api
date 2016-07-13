@@ -12,7 +12,8 @@ function getAndShowWeather(position) {//takes fetch in here somewhere?
   apirequestfetch(lat, lon)
     .then(function(weatherObj) {
       console.log(weatherObj.weather[0].description);
-      document.querySelector("body").innerHTML = weatherObj.weather[0].description;
+      document.querySelector("#description").innerHTML = weatherObj.weather[0].description;
+      document.querySelector("#icon").src = "http://openweathermap.org/img/w/" + weatherObj.weather[0].icon + ".png"
     });
 };
 
