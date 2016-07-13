@@ -5,4 +5,4 @@ require("./main.css");
 var apirequestfetch = require("./apirequestfetch");
 
 // Call the imported function
-apirequestfetch();
+apirequestfetch.getLocation(apirequestfetch.getAndShowWeather);

@@ -8,11 +8,11 @@
   "dependencies": {
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "fetch": "^1.1.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
