@@ -11,7 +11,8 @@ function getAndShowWeather(position) {//takes fetch in here somewhere?
   var lon = position.coords.longitude;
   apirequestfetch(lat, lon)
     .then(function(weatherObj) {
-      console.log(weatherObj);
+      console.log(weatherObj.weather[0].description);
+      document.querySelector("body").innerHTML = weatherObj.weather[0].description;
     });
 };
 
