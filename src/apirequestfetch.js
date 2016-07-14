@@ -6,15 +6,19 @@ function getLocation(cb) {
   };
 };
 
-function getAndShowWeather(position) {//takes fetch in here somewhere?
+function getAndShowWeather(position) {
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
   apirequestfetch(lat, lon)
     .then(function(weatherObj) {
       // console.log(weatherObj.weather[0].description);
       document.querySelector("#greet").innerHTML = "The weather in the environs of lovely " + weatherObj.name + " is alleged, at present, to be:";
-      document.querySelector("#description").innerHTML = weatherObj.weather[0].description;
+      var description = weatherObj.weather[0].description;
+      var capD = description.substring(0, 1).toUpperCase();
+      var escription = description.substring(1);
+      document.querySelector("#description").innerHTML = capD + escription;
       document.querySelector("#icon").src = "http://openweathermap.org/img/w/" + weatherObj.weather[0].icon + ".png";
+      document.querySelector("#temp").innerHTML = parseInt(weatherObj.main.temp) - 273 + " C";
         if (weatherObj.weather[0].icon === "01d") {
           document.querySelector("body").id = "clear-day"
         };

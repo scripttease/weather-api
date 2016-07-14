@@ -1,4 +1,10 @@
-.background {
+body {
+  text-align: center;
+  color: hotpink;
+}
+
+.container {
+  margin: 75px;
 }
 
 #clear-day {
@@ -71,13 +77,4 @@
 
 #mist-night {
   background-image: url(/public/mist-night.jpg);
-}
-
-body {
-  text-align: center;
-  background-color: #eee;
-}
-
-h1 {
-  color: hotpink;
 }
