@@ -5,25 +5,25 @@
   background-image: url(/public/clear-day.jpg);
 }
 
-/* #clear-night { */
-/*   background-image: url(clear-night.jpg); */
-/* } */
+#clear-night {
+  background-image: url(/public/clear-night.jpg);
+}
 
 #few-clouds-day {
   background-image: url(/public/few-clouds-day.jpg);
 }
 
-/* #few-clouds-night { */
-/*   background-image: url(few-clouds-night.jpg); */
-/* } */
+#few-clouds-night {
+  background-image: url(/public/few-clouds-night.jpg);
+}
 
-/* #scattered-clouds-day { */
-/*   background-image: url(scattered-clouds-day.jpg); */
-/* } */
+#scattered-clouds-day {
+  background-image: url(/public/scattered-clouds-day.jpg);
+}
 
-/* #scattered-clouds-night { */
-/*   background-image: url(scattered-clouds-night.jpg); */
-/* } */
+#scattered-clouds-night {
+  background-image: url(/public/scattered-clouds-night.jpg);
+}
 
 #broken-clouds-day {
   background-image: url(/public/broken-clouds-day.jpg);

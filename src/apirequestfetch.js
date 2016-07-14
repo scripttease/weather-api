@@ -16,58 +16,58 @@ function getAndShowWeather(position) {//takes fetch in here somewhere?
       document.querySelector("#description").innerHTML = weatherObj.weather[0].description;
       document.querySelector("#icon").src = "http://openweathermap.org/img/w/" + weatherObj.weather[0].icon + ".png";
         if (weatherObj.weather[0].icon === "01d") {
-          document.querySelector(".background").id = "clear-day"
+          document.querySelector("body").id = "clear-day"
         };
         if (weatherObj.weather[0].icon === "01n") {
-          document.querySelector(".background").id = "clear-night"
+          document.querySelector("body").id = "clear-night"
         }
         if (weatherObj.weather[0].icon === "02d") {
-          document.querySelector(".background").id = "few-clouds-day"
+          document.querySelector("body").id = "few-clouds-day"
         }
         if (weatherObj.weather[0].icon === "02n") {
-          document.querySelector(".background").id = "few-clouds-night"
+          document.querySelector("body").id = "few-clouds-night"
         }
         if (weatherObj.weather[0].icon === "03d") {
-          document.querySelector(".background").id = "scattered-clouds-day"
+          document.querySelector("body").id = "scattered-clouds-day"
         }
         if (weatherObj.weather[0].icon === "03n") {
-          document.querySelector(".background").id = "scattered-clouds-night"
+          document.querySelector("body").id = "scattered-clouds-night"
         }
         if (weatherObj.weather[0].icon === "04d") {
           document.querySelector("body").id = "broken-clouds-day"
         }
         if (weatherObj.weather[0].icon === "04n") {
-          document.querySelector(".background").id = "broken-clouds-night"
+          document.querySelector("body").id = "broken-clouds-night"
         }
         if (weatherObj.weather[0].icon === "09d") {
-          document.querySelector(".background").id = "shower-rain-day"
+          document.querySelector("body").id = "shower-rain-day"
         }
         if (weatherObj.weather[0].icon === "09n") {
-          document.querySelector(".background").id = "shower-rain-night"
+          document.querySelector("body").id = "shower-rain-night"
         }
         if (weatherObj.weather[0].icon === "10d") {
-          document.querySelector(".background").id = "rain-day"
+          document.querySelector("body").id = "rain-day"
         }
         if (weatherObj.weather[0].icon === "10n") {
-          document.querySelector(".background").id = "rain-night"
+          document.querySelector("body").id = "rain-night"
         }
         if (weatherObj.weather[0].icon === "11d") {
-          document.querySelector(".background").id = "thunderstorm-day"
+          document.querySelector("body").id = "thunderstorm-day"
         }
         if (weatherObj.weather[0].icon === "11n") {
-          document.querySelector(".background").id = "thunderstorm-night"
+          document.querySelector("body").id = "thunderstorm-night"
         }
         if (weatherObj.weather[0].icon === "13d") {
-          document.querySelector(".background").id = "snow-day"       
+          document.querySelector("body").id = "snow-day"       
         }
         if (weatherObj.weather[0].icon === "13n") {
-          document.querySelector(".background").id = "snow-night"
+          document.querySelector("body").id = "snow-night"
         }
         if (weatherObj.weather[0].icon === "50d") {
-          document.querySelector(".background").id = "mist-day"       
+          document.querySelector("body").id = "mist-day"       
         }
         if (weatherObj.weather[0].icon === "50n") {
-          document.querySelector(".background").id = "mist-night"      
+          document.querySelector("body").id = "mist-night"      
         }
         
     });
